@@ -16,4 +16,7 @@ export class Lesson {
 
   @Column()
   endDate: string;
+
+  @Column()
+  students: string[]; // student IDs (the relation only defined in this entity and on LessonType)
 }
