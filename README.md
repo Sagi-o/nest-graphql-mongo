@@ -26,7 +26,7 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Important note!
+## Important note
 
 Use these versions to make it work:
 ```
