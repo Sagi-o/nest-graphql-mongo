@@ -29,8 +29,10 @@
 ## Important note!
 
 Use these versions to make it work:
-```graphql 14.6.0,
-mongodb 3.7.0```
+```
+graphql 14.6.0,
+mongodb 3.7.0
+```
 
 ## Installation
 
