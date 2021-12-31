@@ -26,6 +26,12 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Important note!
+
+Use these versions to make it work:
+```graphql 14.6.0,
+mongodb 3.7.0```
+
 ## Installation
 
 ```bash
