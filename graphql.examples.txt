@@ -1,0 +1,64 @@
+query {
+	lesson(id: "5324fa02-3648-4f54-83c4-f2b23fc0d3d8") {
+		startDate
+    name
+  }
+}
+
+query {
+  lessons {
+		id
+    name
+    students {
+      id
+      firstName
+      lastName
+    }
+  }
+}
+
+mutation {
+	assignStudentsToLesson(input: 
+  {
+    lessonId: "404cca6f-0dff-4572-8276-afd3da50ef3e",
+    studentIds: ["aeff976b-b1ac-4130-b8e3-93661513a0c9", "c9a29d6d-8cc8-4068-9780-d8adee0e23cb"]
+  }) {
+    name
+    students {
+			firstName
+      lastName
+      id
+    }
+  }
+}
+
+query {
+	students {
+    firstName
+    lastName
+    id
+  }
+}
+
+mutation {
+createStudent(input:{
+  firstName: "Ann",
+  lastName: "Marrie"
+}) {
+  firstName
+  lastName
+}
+}
+
+mutation {
+	createLesson(
+    input: {
+      name: "New Class 2",
+    	startDate: "2011-10-05T14:48:00.000Z",
+    	endDate: "2012-10-05T14:48:00.000Z"
+    }
+  ) {
+    name
+    id
+	}
+}
